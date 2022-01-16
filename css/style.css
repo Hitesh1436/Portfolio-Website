@@ -1,0 +1,681 @@
+@import 'utilities.css';    /*  to link utility class with this*/
+
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;        /* yeh hain jo color use kiye hain unke code*/
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* yeh hai jo box h usko top left and right se border 0 krne ke liye and clear text krne ke liye bhi*/
+    -webkit-font-smotthing:antialiased;
+}
+
+header{
+    background-color: var(--dark);      /*  header ka background black kia h*/
+    clip-path:polygon(0 0, 100% 0,100% 100%,70% 89%,0 100%);      /* jo polygon h usko bnaya h iska use krke coordinates dekr*/
+   
+}
+.container{
+    max-width: 1152px;     /* container ko ajdust krne ke liye */
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px){        /* yeh sab responsive bnane ke liye krrhe hn*/
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px){
+    .container{                     /* yeh sab responsive bnane ke liye krrhe hn*/
+        max-width: 720px;
+    }
+}
+
+@media (min-width:992px){            /* yeh sab responsive bnane ke liye krrhe hn*/
+    .container{
+        max-width: 960px;      
+    } 
+}
+
+@media (min-width:1200px){            /* yeh sab responsive bnane ke liye krrhe hn*/
+    .container{
+        max-width: 1152px;
+    }
+}
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;           /* underlines htai and color of home about ke liye*/
+    margin-right: 2rem;                /* home about mn gap dia h */
+    text-transform: uppercase;        /* uppercase krne ke liye*/
+    transition: all .3s ease;         /* transition ko thoda slow kia h */
+}
+
+header nav .left a:hover{             /* hovering effect ke liye kia h*/
+    color: var(--primary);          /* color h hover krne pr jo milega*/
+}
+
+header nav{
+    padding: 2rem 0;
+}
+header nav .branding{
+margin-right: 3rem;      /* creative ko baki sbse gap dilwaya h*/
+}
+
+.hero{
+    padding: 3rem 0;
+}
+.hero .left img{
+    width: 500px;     /* image ka size shi krne ke liye */
+
+}
+
+.hero .right{
+    color: var(--pure);    /* jo right mn txt h uska color ke liye*/
+}
+
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);    /* h6 mn changs kiye hain as per requirement*/
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1{
+    font-size: 4rem;  /*  h1 mn  kaam kr rhe hain nd line height is used to reduce space btw lines */
+    font-weight: 100;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span{
+    color: var(--primary);          /* color kia h h1 ko*/
+}
+
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;   /* right mn jo paragraph uske liye */
+}
+
+.hero .right{
+    margin-top: -7rem;   /* jo roght mn paragraph h usko upr kia h thoda sa margin -ve lekr*/
+}
+
+section{
+    padding: 6rem 0;
+}
+
+section.about.about-me-img{        /* image ki ht  set krrhe hn*/
+    height: 450px;
+}
+section.about h1{
+    margin-bottom: 1rem;       /* h1 ko set krrhe han*/
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+section.about h1 span{
+    color: var(--primary);       /* h1 ke andr span ko set krrhe han*/
+}
+
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;       /* h3 ko set krrhe han*/
+    font-weight: 400;
+}
+
+section.about p{
+    font-family: 'Lato',sans-serif;        /* paragraph tag p ko set krrhe han*/
+    color: var(--ternary);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+section.about .social{
+    display: flex;                   /* flex use kia to display them*/
+}
+section.about .social a{
+    background: var(--dark);          /*  yeh kia social links lane ke liye and unhe show krne ke liiye*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;                      /* yeh sb kia un icons ko acha dikhne ke liye space dia aur bhi sab*/
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+}
+
+section.about .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+section.about .social a:hover{
+    background: var(--primary);
+}
+
+.section-heading{
+    color: var(--secondary);   /* yeh humne Our Services ke liye kia hai*/
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.section-heading span{
+   color: var(--primary);
+}
+.section-heading + p{                      /* yeh krrrhe hain  paragraph tag ke liye ab*/
+   color: var(--ternary);
+   font-family: 'Lato',sans-serif;
+   margin-bottom: 8rem;
+   text-align: center;
+
+}   
+
+section.services{
+    background-color: var(--light);      /* background color kia h csectiion ka*/
+}
+
+
+section.services .card-wrapper{         /*  yeh hum cars ko bnne ke liye krrhe hain */
+     display: grid;
+     grid-template-columns: repeat(3,1fr);      /* iska kaam h cards ke kitne column han uske liye nd kitni baar repeat kia h uske liye*/
+      grid-column-gap:2rem;                     /* columns ke bich gap kiya h card vle mn*/
+     grid-row-gap:6rem;                 /* rows ke bich gap kiya h card vle mn*/
+    }
+
+    section.services .card-wrapper .card{
+        background: var(--pure);            /* white color dia h card ke piche*/
+        padding: 3rem 2rem;      /* icon ko padding di h card ke andr*/
+     position: relative;  /* iska use yh h tki pta chle kiske relative positioning krni h hume*/
+     padding-top: 5rem;
+     text-align: center;
+     transition: all .3s ease;
+    }
+
+    section.services .card-wrapper .card img{
+        position: absolute;          /* image khn hogi uske liye krrhe hain*/
+        top: -3.5rem;   /* top se khna hoga icon*/
+        left: 50%;        /* left se khna hoga icon*/
+        transform:translateX(-50%);           /* yeh h tki icon card ke center mn aaye */
+    }
+
+    section.services .card-wrapper .card h2{
+        font-weight: 400;      /* heading h2  ko shi position kia h gap dia h sbkuch*/
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    section.services .card-wrapper .card p{
+        font-family: 'Lato',sans-serif;      /* paragraph ko shi position kia h gap dia h sbkuch*/
+        color: var(--ternary);
+        line-height: 1.6;
+    }
+
+    section.services .card-wrapper .card:hover{   /* hover effect dala h*/
+        background: var(--dark);
+    }
+
+    section.services .card-wrapper .card:hover h2{   /* hover ke sth jo color chaiye vo dala h*/
+        color: var(--pure);
+    }
+
+    section.services .card-wrapper .card:hover p{  /* hover ke sth jo color chaiye vo dala h*/
+        color: var(--pure);
+    }
+
+    section.freelancer{
+        text-align: center;
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Images/camera.png); /* iska use h tki piche transparency maintain krskte and   */
+        color: var(--pure);
+        clip-path:polygon(0 0, 100% 0,100% 100%,67% 80%,0 100%);
+        padding-bottom: 14rem;
+    }
+
+    
+    section.freelancer h1{
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    section.freelancer p{
+        margin-bottom: 2rem;
+        font-family: 'Lato',sans-serif;
+    }
+
+    section.reviews .slider .slide img{
+        width: 100px;       /* image ko shi krrhe hn ab*/
+        height: 100px;
+        border-radius: 50%;
+        object-fit:cover;      /*tki image distort na ho agr alag pixels ki hogi toh  */
+        margin-bottom: 2rem;
+    }
+
+    section.reviews .slider .slide{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column; /* yeh use kiaa tki upr niche aske side mn aaney ki jagah*/
+        padding: 0 10rem;
+    }
+
+    section.reviews .slider .slide p{
+        font-family: 'Lato',sans-serif;
+        color: var(--ternary);
+        margin-bottom: 1rem;
+    }
+
+    
+    section.reviews .slider .slide span{
+        font-size: 0.8rem;
+    }
+
+    section.reviews .slider-dots .dots{        /* taki dots hmre upr niche ni side mn aaye jsa chaiye humko*/
+     list-style-type: none;
+     display: flex!important;         /* yeh use kia tki slider ko override krske hum ki flex mn display kr ske*/
+     justify-content: center;
+    }
+
+    section.reviews .slider-dots{
+        margin-top: 3rem;          /* spacing di h dots ke upr*/
+    }
+
+    section.reviews .slider-dots button{        /* tki number na dkhe vhn bas dots dikhe jse chaiye humko*/
+       font-size: 0;
+       width: 8px;        
+       height: 5px;
+       margin-right: 0.3rem;      
+       border: none;                       /* yeh krrhe hn dots ko shi krne ke liye uski height width sb kuch*/
+       outline: none; 
+       background: var(--ternary);
+       border-radius: 50px;
+       cursor: pointer;
+    }
+
+    section.reviews .dots li.slick-active button{
+     background: var(--primary);  
+     width: 20px;
+    }
+
+
+    section.work{
+        background: var(--light);
+    }
+
+    section.work .card-wrapper{
+        display:grid;                       /* grid use kia h tki arrange krske and (3,1fr) mtlb ek 3 column */
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:2rem;
+
+    }
+
+    section.work .card-wrapper .card{
+        position: relative;         /* same jse phle kia tha tki link card ke center pr aske */
+        height: 250px;
+    }
+
+    
+    section.work .card-wrapper .card .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(61,207,211,0.9);   /* link ke liye kia h yeh sab*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: var(--light);
+        opacity: 0;         /* yeh tki by default link na dikha bas hover kre tab dikhe*/
+        transition: all .3s ease;
+    }
+
+    section.work .card-wrapper .card:hover .overlay{
+      opacity: 1;
+    }
+
+      
+    section.work .card-wrapper .card .overlay a{  /* anchor tag vle le liye kia h*/
+        color: var(--secondary);
+        text-decoration: none;
+    }
+
+    section.work .card-wrapper .card img{
+        height: 100%;               /* img ke loiye kia h yeh sab*/
+        width: 100%;
+    }
+
+    section.blog{
+        background: var(--secondary);
+        clip-path:polygon(0 0, 100% 0,100% 100%,79% 90%,0 100%);
+        padding-bottom: 12rem;
+    }
+
+
+    section.blog .section-heading{
+        color: var(--pure);
+    }
+
+    section.blog .card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);      /* blog 3 hain toh unke liye kia h*/
+        grid-gap: 3rem;
+    }
+
+    section.blog .card-wrapper .card{
+        background: var(--pure);
+    }
+
+    section.blog .card-wrapper .card.img-wrapper img{
+     width: 100%;
+     height: 100%;              /* agr image alag pixels ki h toh yh krenge tki stretch na hojyee */
+     object-fit: cover;
+    }
+
+    section.blog .card-wrapper .card .card-content{
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    section.blog .card-wrapper .card .card-content h1{
+        font-size: 1rem;
+        font-size: 600;
+    }
+
+    section.blog .card-wrapper .card .card-content a{
+        color: var(--secondary);
+        text-decoration: none;
+    }
+
+    section.blog .card-wrapper .card .card-content a:hover{
+      color: var(--primary);   
+    }
+
+    section.blog .card-wrapper .card .card-content span{
+        color: var(--ternary);
+        font-size: 0.8rem;
+    }
+
+    section.blog .card-wrapper .card .card-content p{
+        font-family: 'Lato'sans-serif;
+        color: var(--ternary);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    section.blog .card-wrapper .card .card-content a.read-more{
+        font-size: 0.8rem;
+    }
+
+    section.contact .card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:3rem;
+    }
+
+    section.contact .card-wrapper .card{
+        text-align: center;
+    }
+   
+    section.contact .card-wrapper .card img{
+        margin-bottom: 3rem;
+    }
+
+    section.contact .card-wrapper .card h1{
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    section.contact .card-wrapper .card h6{
+        font-size: 1rem;
+        color: var(--ternary);
+        font-weight: 400;
+        margin-bottom: 4rem;
+    }
+
+    section.contact .input-wrap{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:2rem;
+        margin-bottom: 2rem;
+    }
+
+    section.contact .input-wrap-2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.contact .input-wrap-2 input{
+        margin-bottom: 2rem;
+        border: 1px solid var(--light);
+        font-size: 0.9rem;
+    }
+
+
+    section.contact input{
+        padding: 0.5rem;
+        border: 1px solid var(--light);
+        font-size: 0.9rem;
+    }
+
+
+    section.contact .input-wrap-2 textarea{
+        padding: 0.5rem;
+        border: 1px solid var(--light);
+        font-size: 0.9rem;
+    }
+
+    section.contact .input-wrap-2 textarea:focus{
+        outline: none;
+    }
+
+    section.contact input:focus{         /* tki jb uspr click kren mouse toh line na dikhee*/
+      outline: none;
+    }
+
+    section.contact .btn-wrapper{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    footer{
+        background: var(--secondary);
+        text-align: center;
+        padding: 5rem 0;
+    }
+
+    footer .footer-logo{
+        margin-bottom: 3rem;
+        width: 150px;
+    }
+
+    footer .footer-socials a{
+        margin-right: 1rem;     
+    }
+
+    footer .footer-socials{
+    margin-bottom: 3rem;
+    margin-right: -1rem;
+    }
+
+    footer .copyright{
+        color: var(--ternary);
+    }
+
+    site-main-wrapper{
+        position: relative;
+    }
+
+    .hamberger{
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      z-index: 11;               /*tki hamberger upr show ho oiche tha vo isliye */
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      display: none;
+    }
+
+    .hamberger img{
+        width: 30px;
+    }
+
+    .mobile-nav{
+        position: fixed;   /* yh tki jb hamberger pr click kren toh yeh sab slide hokr ajye left sid se*/
+        top: 0;
+        left: 0;
+        z-index: 1001;
+        background: var(--light);
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        padding-top: 5rem;  
+        transform: translateX(-100%); /* isse navigtion pura screen ke bahar chla gya */
+        transition: all .5s ease-in-out;
+    }
+
+    .open{
+     transform: translateX(0);   /* yeh firse center mn lane ke liye hai*/
+    } 
+
+
+    .times{
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        border: none;      /* yh sab cross ke liye kia h */
+        background: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .times img{
+        width: 30px;
+    }
+
+    .mobile-nav ul{
+        list-style-type: none;       /* tki dots htjyee */
+    }
+
+    .mobile-nav ul li a{
+        color: var(--secondary);
+        text-decoration: none;
+        font-size: 2rem;
+    }
+    /* tki screen size choti ho toh mri image ka size km hojye and yeh sab kia IPAD KE LIYE*/
+    @media (max-width:1024px){     /* iska mtlb h agr 1024 se km pixel gye toh hamberger icon show hojygaa*/
+        header #main-nav{         /* id select krne ke liye # use krte h*/
+        display: none;
+        }
+
+        .hamberger{
+           display: block;
+        }
+
+        .hero .left img{     
+            width: 260px;
+        }
+        .hero .right h1{
+            font-size: 2rem;
+        }
+        .hero{
+            padding-top: 9rem;
+        }
+        header{          /* tki image choti hojye and shi se dikhe sb*/
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 89% ,0 100%);  /* polygon shi adjust hojyee */
+        }
+        section.about .about-me-img{
+            height: 360px;
+        }
+        section.services .card-wrapper{     /* ek row mn 2 card dikhe*/
+         grid-template-columns: repeat(2,1fr);
+        }
+        section.work .card-wrapper{           
+            grid-template-columns: repeat(2,1fr);   /* ek row mn 2 card dikhe*/
+        }
+        section.blog .card-wrapper{
+            grid-template-columns: repeat(1,1fr);   /* ek row mn 1 card dikhe*/
+        }
+        section.blog{     /* polygon shi adjust hojyee */
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 97%, 0 100%);
+        }
+    }
+
+/* tki screen size choti ho toh mri image ka size km hojye and yeh sab kia PHONE KE LIYE*/
+    @media (max-width:576px){
+        .hero{
+            flex-direction: column;
+        }
+        header{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95%, 0 100%);  /*polygon ko shi kia h*/
+        }
+        .hero .right{
+            position: absolute;    /* first page ko shi krrhe hain*/
+            top: 260px;
+            padding: 0 0;
+            background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)); /* yh tki text pdh ske aur background bhi dikhe*/
+        }
+        .hero .left{
+            margin-top: -5rem;
+            margin-right: -8rem;
+            padding-bottom: 6rem;
+        }
+        .about-inner-wrap{    /* class bnai about mn inner-wrap se tki pic upr and txt niche ajye*/
+            flex-direction: column;
+        }
+        .about .right{   /* right class bnai tki center mn laske */
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .about .right .social{
+            justify-content: center;   /* social center mn aajye sab*/
+        }
+        section{
+            padding: 4rem 0;
+        }
+        section.services .card-wrapper{    /* tki ek baar mn ek service dikhe bas*/
+            grid-template-columns: repeat(1,1fr);
+        }
+        section.freelancer h1{
+            line-height: 1.2;
+        }
+        section.freelancer{   /* polygon ko set kia h*/
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 91%, 0 100%);
+            padding-bottom: 8rem ;
+        }
+        section.reviews .slider .slide{  /* side ki padding htate hn clients mn se*/
+           padding: 0 ;
+        }
+        .section-padding + p{   /* niche margin k ki hai*/
+         margin-bottom: 3rem;
+        }
+        section.work .card-wrapper{      /* tki ek page pr ek show ho bas*/
+            grid-template-columns: repeat(1,1fr);
+        }
+        section.contact .card-wrapper{
+            grid-template-columns: repeat(1,1fr);
+        }
+        section.contact .input-wrap{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }

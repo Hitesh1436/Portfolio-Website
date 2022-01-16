@@ -1,0 +1,50 @@
+.flex{
+    display: flex;                   /*  gap dene ke liye home and bki sbme*/
+}
+.items-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+.btn{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;                        /*  contact ko shi krrhe h isse*/
+    font-weight: 600; 
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;          /*  tki curson pointer bnjyee uspe jatey hi*/
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.btn-primary{
+    background: var(--primary);       
+    color: var(--dark);
+}
+
+.btn-primary:hover{
+    background-color: transparent;            /* hover krne pr jo change dikhega uske liye hai yeh*/
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-secondary{
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-secondary:hover{
+    background: var(--primary);
+    color: var(--dark);
+}
+
+.flex-1{          /* yh bnaya taki image and text ko left right krske thoda*/
+    flex: 1;
+}
+
+.justify-center{
+justify-content: center;
+}

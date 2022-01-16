@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>                    <!--name dia h -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">  <!--font h bas-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> <!-- slick slider site se lia h get it now mn jakr-->
+    <link rel="stylesheet" href="./css/style.css"> <!--link krne ke liye use krte hain--> 
+</head>
+
+<body>
+   <div class="site-main-wrapper">
+       <button class="hamberger">    <!-- yh tb ayga jab pixels 1024 se km honge-->
+           <img src="./Images/hamberger.png" alt="">
+       </button>
+       <div class="mobile-nav">
+           <button class="times"><img src="./Images/times.png" alt=""></button>
+           
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">Blog</a></li>    
+          </ul>
+       </div>
+    <header>
+        <div class="container">    <!--jo box h uske liye bnya h -->
+    <nav id="main-nav" class="flex items-center justify-between">  <!-- flex bnya tki box ko cnter mn laa ske , justify us ekia tki contact ko right mn laske-->
+        <div class="left flex items-center">  <!-- yeh banaya tki branding and logo dalske left mn and align krske -->
+           <div class="branding">   
+               <img src="./Images/logo.png" alt="">   <!-- logo lgaya hai-->
+           </div>
+           <div>
+               <a href="#">Home</a>
+               <a href="#about">About</a>
+               <a href="#services">Services</a>   <!--links bnmye hain -->
+               <a href="#work">Work</a>
+               <a href="#blog">Blog</a>
+           </div>
+        </div>
+   
+        <div class="right">
+            <button class="btn btn-primary">Contact</button>      <!-- yeh contact le liye button jo right mn dalenege-->
+        </div>                   <!--common style vle button ke liye btn class h & aur specific style h jse color unke liye btn-primary class hai-->
+    </nav>
+    <div class="hero flex items-center justify-between">   <!-- yeh h apne first page ke liye hitesh ke liye-->
+    <div class="left flex-1 flex justify-center">
+        <img src="./Images/man.png" alt="">   <!-- left side image ke liye-->
+    </div>
+    <div class="right flex-1">       <!--right side name and other info ke liye-->
+        <h6>Hitesh Singh</h6>
+        <h1>I'm a Creative <span>Designer</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi modi laudantium adipisci eum 
+            dicta sed nisi enim voluptatum laborum, blanditiis odio saepe repellat tenetur qui repudiandae
+             porro cum officia quidem.</p>
+             <div>
+               <button class="btn btn-secondary">DOWNLOAD CV</button>  <!-- do class bnai jse upr kia tha ussi vjh se-->
+             </div>
+    </div>
+   </div>
+   </div> 
+   
+    </header>    
+   <section id="about" class="about">          <!-- yeh ab about ke liye krenge hum-->
+   <div class="container flex items-center about-inner-wrap">
+       <div class="flex-1">
+           <img class="about-me-img" src="./Images/man-2.png" alt="">
+       </div>
+       <div class="flex-1 right">
+           <h1> About <span>Me</span></h1>   <!-- sbkuch for about ke liye krrhe hn-->
+            <h3>Hello! I'm Hitesh Singh.</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quae omnis
+                impedit perspiciatis aliquam. Itaque explicabo consequuntur qui provident 
+                cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quae omnis
+                impedit perspiciatis aliquam. Itaque explicabo consequuntur qui provident 
+                cumque</p>
+                <div class="social">
+                   <a href="#"><img src="./Images/website.png" alt=""></a>
+                   <a href="#"><img src="./Images/facebook.png" alt=""></a>
+                   <a href="#"><img src="./Images/twitter.png" alt=""></a>
+                   <a href="#"><img src="./Images/pintrest.png" alt=""></a>
+                   <a href="#"><img src="./Images/instagram.png" alt=""></a>
+                    
+                </div>
+       </div>
+   </div>
+   </section>              <!-- yeh sab section mn kaam krne ke liye kia h niche -->
+   <section id="services" class="services">
+       <div class="container">
+           <h1 class="section-heading"> <span>Our </span> Services</h1>
+           <p>We provide high standard clean website for your business solutions.</p>
+         <div class="card-wrapper">
+            <div class="card">
+                <img src="./Images/brush.png" alt="">
+                <h2>Graphic Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, maiores
+                   adipisicing elit. Repellendus, maiores.
+               </p>
+            </div>
+            <div class="card">
+               <img src="./Images/code.png" alt="">
+               <h2>Web Development</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, maiores
+                  adipisicing elit. Repellendus, maiores.
+              </p>
+           </div>
+           <div class="card">
+               <img src="./Images/bag.png" alt="">
+               <h2>Media Marketing</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, maiores
+                  adipisicing elit. Repellendus, maiores.
+              </p>
+           </div>
+           <div class="card">
+               <img src="./Images/desktop.png" alt="">
+               <h2>Web Design</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, maiores
+                  adipisicing elit. Repellendus, maiores.
+              </p>
+           </div>
+           <div class="card">
+               <img src="./Images/media.png" alt="">
+               <h2>Motion Graphic</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, maiores
+                  adipisicing elit. Repellendus, maiores.
+              </p>
+           </div>
+           <div class="card">
+               <img src="./Images/phone.png" alt="">
+               <h2>Apps</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, maiores
+                  adipisicing elit. Repellendus, maiores.
+              </p>
+           </div>
+         </div>
+       </div>
+   </section>
+   <section class="freelancer">           <!-- ek aur bnya agey  kaam krne ke liye-->
+      <h1>I am Available for Freelancing.</h1>
+      <p>We provide high standard clean website for your business solutions.</p>
+      <button class="btn btn-primary">Download CV </button>
+   </section>
+   <section class="reviews">         <!-- yeh bnya h reviews section ke liye-->
+       <div class="container">
+          <h1 class="section-heading"><span>Our</span> Clients</h1>
+          <p>We provide high standard clean website for your business solutions.</p>
+          <div class="slider">
+          <div class="slide">    <!-- yeh bnya h slide(tki pic and content krske shi se)-->   
+           <img src="./Images/lady.png" alt="">
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Ipsa dolore voluptate deserunt ad fugit sint maxime tenetur
+                   iure quis voluptate deserunt ad fugit sint maxime tenetur optio!</p>
+                   <span>- Tania, Company ABC</span>
+          </div>
+          <div class="slide">    <!-- yeh bnya h slide(tki pic and content krske shi se)-->
+           <img src="./Images/lady.png" alt="">
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ipsa dolore voluptate deserunt ad fugit sint maxime tenetur
+                 iure quis voluptate deserunt ad fugit sint maxime tenetur optio!</p>
+                 <span>- Tania,Company ABC</span>
+        </div>
+        <div class="slide">    <!-- yeh bnya h slide(tki pic and content krske shi se)-->
+           <img src="./Images/lady.png" alt="">
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ipsa dolore voluptate deserunt ad fugit sint maxime tenetur
+                 iure quis voluptate deserunt ad fugit sint maxime tenetur optio!</p>
+                 <span>- Tania,Company ABC</span>
+        </div>
+        <div class="slide">    <!-- yeh bnya h slide(tki pic and content krske shi se)-->
+           <img src="./Images/lady.png" alt="">
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Ipsa dolore voluptate deserunt ad fugit sint maxime tenetur
+                 iure quis voluptate deserunt ad fugit sint maxime tenetur optio!</p>
+                 <span>- Tania,Company ABC</span>
+        </div>
+       </div>
+       <div class="slider-dots"></div>          
+   </div>
+   </section>
+   <section id="work" class="work">                <!-- work section ke liye-->
+    <div class="container">
+      <h1 class="section-heading"><span>Our</span> Works</h1> <!-- phle bnya h so ab bhi use krengetki dobara na likhna pde code-->
+      <p>We provide high standard clean website for your business solutions.</p>
+     <div class="card-wrapper">           <!-- already use kia h so ussi ko use krenge-->
+     <div class="card">                       <!-- phli image h uske liye ese hi bki sbke liye krenge-->
+       <div class="overlay">
+           <span>Category</span>
+           <a href="#">Web Development</a>
+       </div> 
+       <img src="./Images/ph-1.png" alt="">
+     </div>
+     <div class="card">  
+       <div class="overlay">        <!-- yeh kia h tki jb hum hover kre toh link show krske uspr-->
+           <span>Category</span>
+           <a href="#">Web Development</a>
+       </div>            
+       <img src="./Images/ph-2.png" alt="">
+   </div>
+   <div class="card">           
+       <div class="overlay">
+           <span>Category</span>
+           <a href="#">Web Development</a>
+       </div>   
+       <img src="./Images/ph-3.png" alt="">
+   </div>
+   <div class="card"> 
+       <div class="overlay">
+           <span>Category</span>
+           <a href="#">Web Development</a>
+       </div>             
+       <img src="./Images/ph-3.png" alt="">
+   </div>
+   <div class="card">   
+       <div class="overlay">
+           <span>Category</span>
+           <a href="#">Web Development</a>
+       </div>           
+       <img src="./Images/ph-2.png" alt="">
+   </div>
+   <div class="card"> 
+       <div class="overlay">
+           <span>Category</span>
+           <a href="#">Web Development</a>
+       </div>             
+       <img src="./Images/ph-1.png" alt="">
+   </div>
+     </div>
+    </div>
+   </section>
+   <section id="blog" class="blog">
+       <div class="container">
+           <h1 class="section-heading"><span>Our</span> Blog</h1>
+           <p>We provide high standard clean website for your business solutions.</p>
+   
+           <div class="card-wrapper">
+             <div class="card">
+                 <div class="img-wrapper">
+                     <img src="./Images/article-ph-1.png" alt="">
+                 </div>
+                     <div class="card-content">
+                        <a href="#"> <h1>Hey! Everyone</h1>  <!-- tki clickable bnaske iskoo-->
+                       </a>
+                       <span>Jan 15, 2022</span>
+                       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, non. Animi,
+                            corporis sunt! Voluptas similique porro sequi error non voluptatibus unde totam facere.
+                             Exercitationem fuga perspiciatis non facilis recusandae veritatis.</p>
+                             <a href="#">Read More </a>
+                 </div>
+             </div>
+             <div class="card">
+               <div class="img-wrapper">
+                   <img src="./Images/article-ph-1.png" alt="">
+               </div>
+                   <div class="card-content">
+                      <a href="#"> <h1>Hey! Everyone</h1>  <!-- tki clickable bnaske iskoo-->
+                     </a>
+                     <span>Jan 15, 2022</span>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, non. Animi,
+                          corporis sunt! Voluptas similique porro sequi error non voluptatibus unde totam facere.
+                           Exercitationem fuga perspiciatis non facilis recusandae veritatis.</p>
+                           <a href="#">Read More </a>
+               </div>
+           </div>
+           <div class="card">
+               <div class="img-wrapper">
+                   <img src="./Images/article-ph-1.png" alt="">
+               </div>
+                   <div class="card-content">
+                      <a href="#"> <h1>Hey! Everyone</h1>  <!-- tki clickable bnaske iskoo-->
+                     </a>
+                     <span>Jan 15, 2022</span>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, non. Animi,
+                          corporis sunt! Voluptas similique porro sequi error non voluptatibus unde totam facere.
+                           Exercitationem fuga perspiciatis non facilis recusandae veritatis.</p>
+                           <a href="#">Read More </a>
+               </div>
+           </div>
+           </div>
+       </div>
+   </section>
+   <section class="contact">
+       <div class="container">
+           <h1 class="section-heading">Contact <span>Us</span></h1>
+           <p>We provide high standard clean website for your business solutions.</p>
+           <div class="card-wrapper">
+               <div class="card">
+                   <img src="./Images/phone-2.png" alt="">
+                   <h2>Call Me On</h2>
+                   <h6>+8571899675</h6>
+               </div>
+               <div class="card">
+                   <img src="./Images/msg.png" alt="">
+                   <h2>Email Me At</h2>
+                   <h6>hsc253545@gmail.com</h6>
+               </div>
+               <div class="card">
+                   <img src="./Images/map.png" alt="">
+                   <h2>Home Address</h2>
+                   <h6>D 4666/1 Ekta Nagar
+                       121102, Haryana</h6>
+               </div>
+           </div>
+           <form action="">          <!-- form type mn daldia tki form submit krpye -->
+               <div class="input-wrap">
+                   <input type="text" placeholder="Your Name *">       <!-- input denge ese name email mn -->
+                   <input type="text" placeholder="Your Email *">
+               </div>
+               <div class="input-wrap-2">
+                <input type="text" placeholder="Your Subject...">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..."></textarea>
+               </div>
+               <div class="btn-wrapper">
+                   <button class="btn btn-primary">Send Message</button>
+               </div>
+           </form>
+       </div>
+   </section>
+   <footer>
+       <img class="footer-logo" src="./Images/logo-2.png" alt="">
+       <div class="footer-socials">
+                   <a href="#"><img src="./Images/website.png" alt=""></a>
+                   <a href="#"><img src="./Images/facebook.png" alt=""></a>
+                   <a href="#"><img src="./Images/twitter.png" alt=""></a>
+                   <a href="#"><img src="./Images/pintrest.png" alt=""></a>
+                   <a href="#"><img src="./Images/instagram.png" alt=""></a>
+   
+       </div>
+       <div class="copyright">
+           Copyright 2022 © Name ABC Template. All Right Reserved.
+       </div>
+   </footer>
+
+   </div>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/app.js"></script>
+
+</body>
+
+</html>
